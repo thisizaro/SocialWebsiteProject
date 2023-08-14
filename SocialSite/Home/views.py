@@ -1,10 +1,11 @@
 from django.shortcuts import render, HttpResponse
+import os
 
 # Create your views here.
 
 
 def index(request):
-    return HttpResponse("This is HOMEPAGE")
+    return render(request, 'index.html')
 
 def about(request):
-    return HttpResponse("This is About page")
+    return HttpResponse('static/test.txt')
